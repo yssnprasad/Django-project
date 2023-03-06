@@ -1,0 +1,43 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Contact Page</title>
+    <center>Techinfo365days</center>
+    <link rel="stylesheet" href ="{% static 'signup.css'%}">
+    <link type="text/css" rel="stylesheet "href="signup.css"> 
+</head>
+<body>
+<div class="background:#ffffff">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+   
+    <form action="" method="post">
+        {% csrf_token %} 
+        <h3>Contact Details</h3>
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="name" name="name" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" name="email" id="email">
+
+        <label for="Phone">Phone</label>
+        <input type="Phone" placeholder="Phone" id="Phone" name="Phone">
+
+        <label for="Address">Address</label>
+        <input type="Address" placeholder="Address" id="Address" name="Address">
+
+        <label for="comment">comment</label>
+        <input type="comment" placeholder="comment" id="comment" name="comment">
+ 
+        <button type="submit">submit</button>
+       
+    </form>
+
+</body>
+</html>

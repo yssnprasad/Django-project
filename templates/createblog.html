@@ -1,0 +1,34 @@
+{% extends "demo.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Createblog</title>
+    <link rel="stylesheet" href ="{% static 'signup.css'%}">
+    <link type="text/css" rel="stylesheet "href="signup.css"> 
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %} 
+        <h3>Signup Here</h3>
+
+        <label for="title">title</label>
+        <input type="text" placeholder="title" name="title" id="title">
+
+        <label for="description">description</label>
+        <input type="description" placeholder="description" name="description" id="description">
+
+        <label for="author">author</label>
+        <input type="author" placeholder="author" id="author" name="author">
+
+    
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
+{% endblock %}

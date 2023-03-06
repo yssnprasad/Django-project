@@ -1,0 +1,77 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+  </head>
+  <body>
+   
+    <title>Techinfo365days</title>
+    <link rel="stylesheet" href ="{% static 'home.css'%}">
+    <link type="text/css" rel="stylesheet "href="home.css">
+    <div id="Name">
+    <center>Techinfo365days</center>
+    <img src="https://lh3.googleusercontent.com/9X8t5IvH50gVYnaFZNPCY_fwF5W6Sry49rf3SZXbD0SX98aP-YtRwXyhDqOWdLk3Ujffcw=s85"alt="Techinfo365days" width="150" height="150">
+    </div>
+    <div id="menu">
+    <ul id="list" type="none">
+    <li><a href="{% url 'home' %}">Home Page</a></li>
+    <li><a href="{% url 'login' %}">Login Page</a></li>
+    <li><a href="{% url 'signup' %}">Signup Page</a></li>
+    <li><a href="{% url 'aboutus' %}">Aboutus Page</a></li>
+    <li><a href="{% url 'contactus' %}">Contact us</a></li>
+    </ul>
+    <br>
+    </div>
+    <div id="intro">Introduction</div><br><br>
+    <div id="introc"> <p>Hi Prasad, it's great to hear about your blog and the reason behind starting it.I can understand the challenges that many middle-class families face in terms of financial restrictions. It's admirable that you've taken it upon yourself to explore and share your knowledge of technology through your blog, which can also be a great resource for others who are interested in tech and hacking.</p>
+      <p>It's always exciting to learn about new updates in the tech industry, whether it's related to gaming, mobile devices, or software development. Additionally, song lyrics can also be a great addition to your blog, as it can attract a wider audience and provide entertainment value.</p>
+      <p>I wish you all the best with your blog and hope that you continue to explore and share your knowledge of tech with others.
+        <head>
+          <title>Types of Technology Information</title>
+        </head>
+        <body>
+          <h1>Types of Technology Information</h1>
+          <p>There are many types of technology information available today, ranging from basic software development and coding knowledge to more advanced cybersecurity and ethical hacking courses. Additionally, new earning opportunities through technology are constantly emerging, making it an exciting field to explore.</p>
+          <h2>Basic Programming Knowledge</h2>
+          <p>For beginners, there are numerous online courses and tutorials that cover the basics of coding and programming. These courses can help individuals develop the skills needed to build websites, mobile applications, and other software solutions.</p>
+          <h2>Cybersecurity and Ethical Hacking</h2>
+          <p>For those interested in cybersecurity and ethical hacking, there are many courses available that cover everything from basic cybersecurity principles to more advanced penetration testing and ethical hacking techniques. These courses provide individuals with the knowledge and skills needed to identify and prevent cyber threats and vulnerabilities.</p>
+          <h2>Earning Income</h2>
+          <p>Another exciting aspect of technology information is the various ways to earn income. With the rise of the gig economy, there are many opportunities for individuals to make money through freelance work, such as web design, graphic design, and digital marketing. Additionally, emerging technologies like blockchain and cryptocurrency provide new opportunities for earning income, such as mining cryptocurrency and participating in decentralized finance (DeFi) platforms.</p>
+          <h2>Important Considerations</h2>
+          <p>It's important to note, however, that not all courses and earning opportunities in technology are created equal. It's important to do research and verify the legitimacy and quality of any course or opportunity before investing time or money into it.</p>
+          <h2>Conclusion</h2>
+          <p>In conclusion, technology information is a broad and exciting field with many opportunities for learning and earning. Whether you're interested in basic programming knowledge or advanced cybersecurity techniques, there are many resources available to help you achieve your goals. However, it's important to approach technology information critically and verify the quality and legitimacy of any courses or opportunities before investing time and money into them.</p>
+        </body>
+      </p></div><br>
+   
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div id=footer>
+    <footer>
+    <u>For more Details</u><br>
+    <div style="display: flex;">
+      <ul style="list-style-type: none; margin-right: 1150px;">
+         <li><a href="{% url 'disclaimer' %}">Disclaimer</a></li>
+         <li><a href="{% url 'PrivacyPolicy' %}">Privacy Policy</a></li>
+        <li><a href="{% url 'termscondition' %}">Terms&Conditions</a></li>
+        <li><a href="#"></a></li>
+        </ul>
+          <ul style="list-style-type: none;">
+            <li><a href="https://techinfo365days.blogspot.com/">Blog</a></li>
+            <li><a href="https://github.com/yssnprasad">Github</a></li>
+            <li><a href="https://twitter.com/yssnprasad">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/satya-siva-nagendra-prasad-yelisetti-60b242219">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100027601997257">Facebook</a></li>
+          </ul>
+    </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Techinfo365days</title>
+  <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>  
+  
+  <div id="Name">
+    <center>Techinfo365days</center>
+    <img src="https://lh3.googleusercontent.com/9X8t5IvH50gVYnaFZNPCY_fwF5W6Sry49rf3SZXbD0SX98aP-YtRwXyhDqOWdLk3Ujffcw=s85" alt="Techinfo365days" width="100" height="100">
+  </div>
+  <div id="menu">
+    <ul id="list" type="none">
+      <li id="Home"><a href="{% url 'home' %}">Home Page</a></li>
+      <li><a href="{% url 'Technology Information' %}">Technology Information</a></li>
+      <li><a href="{% url 'Hacking' %}">Hacking Course</a></li>
+      <li><a href="{% url 'EarnAway' %}">EarnAway</a></li>
+      <li><a href="{% url 'logout' %}">Logout</a></li>
+      <li><a href="{% url 'createblog' %}">CreateBlog</a></li>
+      <li><a href="{% url 'aboutus' %}">About us</a></li>
+      <li><a href="{% url 'contactus' %}">Contact us</a></li>
+    </ul>
+    <br>
+  </div>
+  <body> 
+    {% block content%}
+    {% for i in post %}
+    <title>Techinfo365days</title>
+      <b>Title:{{i.title}}</b><br>
+      <h6>Description:{{i.description}}</h6><br>
+      Author:{{i.author}}<br>
+     <img src="{{i.images.url}}" height="200" width="200"><br>
+      Created_at:{{i.created_at}}<br>
+    {% endfor %}
+    {% endblock content%}
+    </body> 
+
+  <br>
+  <div id="footer">
+    <footer>
+      <u>For more Details</u><br>
+      <div style="display: flex;">
+        <ul style="list-style-type: none; margin-right: 1150px;">
+          <li><a href="{% url 'disclaimer' %}">Disclaimer</a></li>
+          <li><a href="{% url 'PrivacyPolicy' %}">Privacy Policy</a></li>
+          <li><a href="{% url 'termscondition' %}">Terms&Conditions</a></li>
+        </ul>
+        <ul style="list-style-type: none;">
+          <li><a href="https://techinfo365days.blogspot.com/">Blog</a></li>
+          <li><a href="https://github.com/yssnprasad">Github</a></li>
+          <li><a href="https://twitter.com/yssnprasad">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/satya-siva-nagendra-prasad-yelisetti-60b242219">Linkedin</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100027601997257">Facebook</a></li>
+          </ul>
+      </footer>
+      </div>
+    </body>
+  </html>

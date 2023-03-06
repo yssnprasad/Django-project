@@ -1,0 +1,83 @@
+
+#Name{
+    width:auto;
+    height: auto;
+    font-size: 25px;
+    background-color: #6B2B82;
+    color: aliceblue;
+    padding:20px;
+    }
+    #intro{
+    width:130px;
+    font-size: 25px;
+    text-align: justify;
+    background-color: #707072;
+    text-decoration: underline;
+    color: white;
+    position: relative;
+    }
+    #menu{
+    height:auto;
+    width:auto;
+    background:#D4198C;
+    padding: 15px 0px;
+    }
+    #menu ul li{
+    float:left;
+    padding:0px 20px;
+    border-color: black;
+    border-right-style: ridge;
+    }
+    ul li:last-child{
+    border-right: none;
+    }
+    a{
+    color: white;
+    text-decoration: none;
+    }
+    #menu a:hover{
+    font-size: 25px;
+    background-color: #EB754F;
+    color: azure;
+    }
+    #introc{
+    font-size: 18px;
+    font-family: cursive;
+    text-align: justify;
+    }
+    #sidebar{
+    background-color: #EB754F ;
+    width:400px;
+    height:auto;
+    padding: 15px 0px;
+    border-radius: 40px;
+    font-size: 20px;
+    }
+    #sidebar a:hover{
+    color:white;
+    font-size: 25px;
+    animation-name: example;
+    animation-duration: 2s;
+    }
+    #footer{
+    text-align: right ;
+    }
+    #footer{
+    background-color:#6B2B82 ;
+    color:white;
+    padding:20px 40px;
+    }
+    #footer a:hover{ 
+    animation-name: example1;
+    animation-duration: 2s;
+    font-size: 30px;
+    }
+    @keyframes
+    example{
+    from {background-color: firebrick;}
+    to{background-color: aqua}
+    }
+    @keyframes example1{
+    from {background-color: white;}
+    to{background-color: firebrick;}
+    }   
